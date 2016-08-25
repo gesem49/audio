@@ -1,0 +1,14 @@
+.track-box {
+  border: solid 1px;
+  background-color: black;
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  font-family: 'Ubuntu-L';
+  text-align: center;
+  width: 33%;
+}
+
+.track-box:hover, .track-box:active, .track-box:hover {
+  outline: none;
+  background-color: rgba(18, 18, 18, 0.8);
+}

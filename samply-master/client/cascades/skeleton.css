@@ -1,0 +1,11 @@
+.centered-div-med {
+  border: solid 1px;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.page-header {
+  border: solid 1px;
+  text-align: center;
+  width: 100%;
+}

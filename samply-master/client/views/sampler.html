@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset='utf8'>
+  <title> Experiments - Sampler </title>
+  <link rel="stylesheet" href="/static/cascades/normalize.css">
+  <link rel="stylesheet" href="/static/cascades/fontfaces.css">
+  <link rel="stylesheet" href="/static/cascades/skin.css">
+  <link rel="stylesheet" href="/static/cascades/skeleton.css">
+  <link rel="stylesheet" href="/static/cascades/tracksdeck.css">
+  <link rel="stylesheet" href="/static/cascades/trackbox.css">
+</head>
+
+<body>
+
+<div class="centered-div-med" id="main-container">
+
+  <!-- All stuff here -->
+  <header class="page-header" id="sampler-header">
+    <h1> Experiments - Sampler </h1>
+  </header>
+
+</div>
+<!-- Scripts loading -->
+<script src="static/scripts/ui/components/trackbox.js"></script>
+<script src="static/scripts/ui/components/tracksdeck.js"></script>
+
+<script>
+let tIndex = {
+  _stats: {registered_keys: 0},
+  keymaps: {}
+},
+fTable = {
+  focused: null
+}
+//Main script for bootstrapping, should go in /scripts/boot.js
+let td = tracksDeck({
+  tbox_factory:   trackBox,
+  width:          '90%',
+  triggers_index: tIndex,
+  focus_table:    fTable
+});
+
+document.getElementById('main-container').appendChild(td);
+</script>
+
+
+</body>
+
+</html>
